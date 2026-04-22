@@ -1,1 +1,1 @@
-# g-sync
+# G-Sync Companion App for Gordian Network
