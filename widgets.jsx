@@ -250,21 +250,16 @@ function WActiveModules({ onClick }) {
     }}>
       <div className="label label-bright" style={{ marginBottom: 4 }}>ACTIVE MODULES</div>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 1 }}>
-        {/* vehicle placeholder (original geometric) */}
+        {/* vehicle render */}
         <div style={{
-          width: 74, height: 56, position: 'relative', flex: 'none',
+          width: 90, height: 64, position: 'relative', flex: 'none',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>
-          <svg width="74" height="58" viewBox="0 0 74 58" fill="none">
-            {/* cabin — generic capsule pod, not a real product */}
-            <path d="M10 40 Q10 14 37 10 Q64 14 64 40 L64 46 L10 46 Z"
-                  fill="#2a2a2a" stroke="rgba(255,255,255,0.25)" strokeWidth="0.7"/>
-            <path d="M14 38 Q14 18 37 14 Q60 18 60 38 Z"
-                  fill="#1a1a1a"/>
-            <circle cx="22" cy="48" r="5" fill="#0a0a0a" stroke="rgba(255,255,255,0.2)" strokeWidth="0.5"/>
-            <circle cx="52" cy="48" r="5" fill="#0a0a0a" stroke="rgba(255,255,255,0.2)" strokeWidth="0.5"/>
-            <rect x="28" y="40" width="18" height="3" rx="1" fill="var(--ember)" opacity="0.7"/>
-          </svg>
+          <img src="assets/vehicle.png" alt="vehicle"
+            style={{
+              width: '100%', height: '100%', objectFit: 'contain',
+              filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.5))',
+            }}/>
         </div>
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 8 }}>
           <ModuleRow label="7-PAX MOVER" sub="ASTK.GORDIAN.01A" on/>
