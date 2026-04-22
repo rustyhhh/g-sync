@@ -1,1 +1,2 @@
 # G-Sync Companion App for Gordian Network
+https://rustyhhh.github.io/g-sync/
